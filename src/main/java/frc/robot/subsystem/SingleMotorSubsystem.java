@@ -8,7 +8,9 @@ import com.ctre.phoenix6.signals.NeutralModeValue;
 
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+s
 
+//this will spin a single motor
 public class SingleMotorSubsystem extends SubsystemBase {
 
     // This is the only motor we are concerned about spinning in this example.
@@ -61,7 +63,8 @@ public class SingleMotorSubsystem extends SubsystemBase {
 
         return run(() -> motor.setControl(spinOutputForward))
             .finallyDo(() -> motor.setControl(stopOutput)); // stop when finished
-      }
+      } 
+
 
 
          /** Method that returns a command to stop the motor */
